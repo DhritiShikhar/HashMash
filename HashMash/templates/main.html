@@ -1,0 +1,47 @@
+{% from "_main.html" import render_field %}
+{% block title %} HashMash {% endblock %}
+
+{% block content %}
+    <form method="post">
+    <div class="main">
+      <center>
+        <b>Enter hashtag:</b>
+        <br /><br />
+        {{ render_field(form.userquery, field_description="user Query" }}
+        <br /><br />
+        <button type="submit" formtarget="page.html" value="Submit">Enter</button>
+        <br /><br />
+      </center>
+    </div>
+    <div class="tree">
+      <center>
+        <table width="50%" border="1">
+          <tr>
+            <td>
+              <input type="checkbox" name="Facebook">Facebook
+            </td>
+            <td>
+              <input type="checkbox" name="Twitter">Twitter
+            </td>
+            <td>
+              <input type="checkbox" name="News">News
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="Tumblr">Tumblr
+            </td>
+            <td>
+              <input type="checkbox" name="Wordpress">Wordpress
+            </td>
+            <td>
+              <input type="checkbox" name="Magazines">Magazines
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+    </form>
+ 
+{% endblock %}
+  
