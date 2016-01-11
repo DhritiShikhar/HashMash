@@ -1,15 +1,16 @@
+<!doctype html>
 <html>
   <head>
-    <title>HashMash</title>
+    <title>HashMash - {{ userquery }}</title>
   </head>
   <body background="static/images/grey.jpg">
     <div class="header" style="background-color:white; height:30px; padding-left:5px; padding-bottom:1px;">
-      <h3>User Query</h3>
+      <h3><a>{{ userquery }}</a> </h3>
     </div>
     <br style="clear: left;" />
-    <div class="section" style="background-color:white; height:500px; width:650px; float:left; border: 1px solid black; padding-left:5px;">
+    <div class="section" style="background-color:white; height:500px; width:650px; float:left; border: 1px solid black; padding-left:5px; overflow-y:scroll; overflow-x:hidden;">
       <h3>List of links</h3>
-      <table style="border: 1px solid black; width:640px;">
+      <table style="border: 1px solid black; width:620px;">
         <tr>
           <td><font size="3"><b>Clickable Title<b></font></td>
         </tr>
