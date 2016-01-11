@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-  return redirect(url_for('index'))
+  return render_template("index.html")
 
 @app.route("/index")
 def index():
-  return render_template("page.html")
+  return render_template("index.html")
 
 if __name__ == "__main__":
   app.run()

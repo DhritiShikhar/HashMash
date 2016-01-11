@@ -1,13 +1,14 @@
-{% from "_main.html" import render_field %}
-{% block title %} HashMash {% endblock %}
-
-{% block content %}
-    <form method="post">
+<html>
+  <head>
+    <title>HashMash</title>
+  </head>
+  <body background="static/images/grey.jpg">
+    <form>
     <div class="main">
       <center>
         <b>Enter hashtag:</b>
         <br /><br />
-        {{ render_field(form.userquery, field_description="user Query" }}
+        <input type="text" size="50" name="user-query">
         <br /><br />
         <button type="submit" formtarget="page.html" value="Submit">Enter</button>
         <br /><br />
@@ -42,6 +43,6 @@
       </center>
     </div>
     </form>
- 
-{% endblock %}
+  </body>
+</html>
   

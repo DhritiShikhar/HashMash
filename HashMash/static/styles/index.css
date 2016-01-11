@@ -1,0 +1,27 @@
+<style>
+
+#section {
+background-color:grey;
+height:300px;
+width:100px;
+float:left;
+padding:5px;
+}
+
+#preview {
+background-color:blue;
+height: 300px;
+width: 100px;
+float:left;
+padding: 5px;
+}
+
+#footer {
+background-color:black;
+height:50px;
+color: white;
+text-align:center;
+padding: 5px;
+}
+
+</style> 
