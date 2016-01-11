@@ -1,20 +1,29 @@
 <html>
   <head>
     <title>HashMash</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}" />
   </head>
   <body background="static/images/grey.jpg">
-    <div>
-      <h1>User Query</h1>       
+    <div class="header" style="background-color:white; height:30px; padding-left:5px; padding-bottom:1px;">
+      <h3>User Query</h3>
     </div>
-    <div class="section">
-      <h1>List of links</h1>
+    <br style="clear: left;" />
+    <div class="section" style="background-color:white; height:500px; width:650px; float:left; border: 1px solid black; padding-left:5px;">
+      <h3>List of links</h3>
+      <table style="border: 1px solid black; width:640px;">
+        <tr>
+          <td><font size="3"><b>Clickable Title<b></font></td>
+        </tr>
+        <tr>
+          <td><font size="1">Source</font></td>
+        </tr>
+      </table>
     </div>
-    <div class="preview">
-      <h1>Preview Window</h1>
+    <div class="preview" style="background-color:white; height:500px; width:650px; float:right; border: 1px solid black; padding-left:5px;">
+      <h3>Preview Window</h3>
     </div>
-    <div class="footer">
-      <h1>Copyrights</h1>
+    <br style="clear: left;" />
+    <div class="footer" style="background-color:white; height:20px;i float:bottom; padding-left:5px;">
+      <h6>Copyrights</h6>
     </div>
   </body>
 </html>
